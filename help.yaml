@@ -1,0 +1,67 @@
+flags:
+  build-arg: []
+  cache: false
+  cache-copy-layers: false
+  cache-dir: "/cache"
+  cache-repo: ""
+  cache-run-layers: true
+  cache-ttl: "336h0m0s"
+  cleanup: false
+  compressed: true
+  compression: ""
+  compression-level: -1
+  context: "/workspace/"
+  context-sub-path: ""
+  destination: []
+  digest-file: ""
+  dockerfile: "Dockerfile"
+  force : false
+  force-build-metadata : false
+  git: ""
+  ignore-path : []
+  ignore-var-run : true
+  image-download-retry : 0
+  image-fs-extract-retry : 0
+  image-name-tag-with-digest-file : ""
+  image-name-with-digest-file : ""
+  insecure : false
+  insecure-pull : false,
+  insecure-registry : []
+  kaniko-dir : "/kaniko"
+  label : []
+  log-format : "color"
+  log-timestamp : false
+  no-push : false
+  no-push-cache : false
+  oci-layout-path : ""
+  push-ignore-immutable-tag-errors : false
+  push-retry : 0
+  registry-certificate : []
+  registry-client-cert : []
+  registry-map: []
+  registry-mirror: []
+  reproducible: false
+  single-snapshot: false
+  skip-default-registry-fallback: false
+  skip-push-permission-check: false
+  skip-tls-verify: false
+  skip-tls-verify-pull: false
+  skip-tls-verify-registry: []
+  skip-unused-stages: false
+  snapshot-mode: "full"
+  tar-path: ""
+  target: ""
+  use-new-run: ""
+  verbosity: "info" # trace, debug, info, warn, error, fatal, panic
+
+docker:
+  # place the content (in yaml format) to put in .docker/config.json
+  # exemple :
+  #
+  # config :
+  #   auths:
+  #     registry:
+  #       username: xxx
+  #       password: xxx
+  # >>> {"auths":{"registry":{"username":"xxx","password":"xxx"}}} in .docker/config.json
+  config:
